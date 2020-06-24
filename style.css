@@ -16,6 +16,7 @@ body {
   background-color: #c6dec6;
   flex: 1;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 #selfie {
@@ -38,11 +39,13 @@ body {
   background-color: #d0d0cd;
   display: flex;
   flex: 0.2;
-  padding-top: 0.5em;
+  padding-top: 2%;
   flex-direction: column-reverse;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   border-radius: 25px;
+  max-height: 40vh;
+  align-items: center;
 }
 
 .left:hover {
@@ -67,6 +70,10 @@ body {
   flex: 1;
   flex-direction: column;
 }
+
+/* .right p {
+  overflow: hidden;
+} */
 
 .links {
   display: flex;
