@@ -54,6 +54,14 @@ body {
   margin: 0.1em;
 }
 
+#name h1 {
+  font-size: 2vw;
+}
+
+#name h4 {
+  font-size: 1vw;
+}
+
 .right {
   display: flex;
   flex: 1;
