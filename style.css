@@ -1,3 +1,7 @@
+:root {
+  --icon-size: 2em;
+}
+
 html,
 body {
   display: flex;
@@ -11,7 +15,7 @@ body {
 }
 
 #wrapper {
-  font-family: Futura;
+  font-family: Futura, Noto Sans;
   display: flex;
   background-color: #c6dec6;
   flex: 1;
@@ -81,19 +85,16 @@ body {
   justify-content: center;
 }
 
-.links a {
-  background-color: #d0d0cd;
-  margin-left: 1em;
-  text-decoration: none;
-  color: black;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
-  border-radius: 25px;
+.links img {
+  margin-left: .5em;
+  margin-right: .5em;
   padding-left: 0.5em;
-  padding-right: 0.5em;
+  padding-right: 0.5em; 
+  width: var(--icon-size);
+  height: var(--icon-size);
+  transition: transform .3s ease-out;
 }
 
-.links a:hover {
-  color: darkslategrey;
-  background-color: cornsilk;
+.links img:hover {
+  transform: rotate(360deg);
 }
