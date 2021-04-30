@@ -52,8 +52,6 @@ body {
 }
 
 .links img {
-  -webkit-filter: grayscale(1) invert(1);
-    filter: grayscale(1) invert(1);
   margin-left: 0.5em;
   margin-right: 0.5em;
   padding-left: 0.5em;
