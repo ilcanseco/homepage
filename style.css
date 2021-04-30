@@ -11,26 +11,39 @@ body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  background-color: #c6dec6;
+  /* background-color: #c6dec6; */
 }
 
 #wrapper {
   font-family: Futura, Noto Sans;
-  display: flex;
-  background-color: #c6dec6;
-  flex: 1;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* background-color: #c6dec6; */
   justify-content: space-evenly;
   align-items: center;
 }
 
-#selfie {
-  width: 50%;
-  height: auto;
-  border-radius: 25px;
+.top {
+  background-image: url("img.jpeg");
+  background-size: contain;
+  height: 100%;
 }
 
-.left,
-.right {
+.circular {
+  position: relative;
+  width: 10em;
+  height: 10em;
+  overflow: hidden;
+  border-radius: 50%;
+  align-items: center;
+}
+
+.circular img {
+  width: 100%;
+  height: auto;
+}
+
+#bottom {
   margin: 5px;
   max-width: 30%;
   display: flex;
@@ -39,7 +52,7 @@ body {
   align-items: center;
 }
 
-.left {
+/* .left {
   background-color: #d0d0cd;
   display: flex;
   flex: 0.2;
@@ -50,11 +63,7 @@ body {
   border-radius: 25px;
   max-height: 40vh;
   align-items: center;
-}
-
-.left:hover {
-  background-color: cornsilk;
-}
+} */
 
 #name {
   text-align: center;
@@ -86,13 +95,13 @@ body {
 }
 
 .links img {
-  margin-left: .5em;
-  margin-right: .5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
   padding-left: 0.5em;
-  padding-right: 0.5em; 
+  padding-right: 0.5em;
   width: var(--icon-size);
   height: var(--icon-size);
-  transition: transform .3s ease-out;
+  transition: transform 0.3s ease-out;
 }
 
 .links img:hover {
